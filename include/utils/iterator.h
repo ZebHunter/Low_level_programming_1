@@ -1,0 +1,8 @@
+#ifndef LAB1_ITERATOR_H
+#define LAB1_ITERATOR_H
+
+
+
+
+
+#endif LAB1_ITERATOR_H
