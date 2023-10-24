@@ -28,7 +28,7 @@ typedef struct{
 
 page_t* createPage();
 
-enum read_status readPage()
+enum read_status readPage();
 
 enum write_status writePage(page_t* page);
 

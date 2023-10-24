@@ -20,21 +20,24 @@ typedef struct string{
 
 typedef struct {
     fields_t type;
+    char key[13];
     union{
-        uint32_t intValue;
+        int32_t intValue;
         double floatValue;
-        string stringValue;
+        string_t stringValue;
         bool booleanValue;
     };
-    char key[13];
 } element;
 
 element* createElement(const char* key, element el);
-element* readElement();
-int writeElement();
-int updateElement();
-void destroyElement(element* el);
 
+element* readElement();
+
+enum write_status writeElement();
+
+int updateElement();
+
+void destroyElement(element* el);
 
 
 #endif //LLP1_TYPES_H

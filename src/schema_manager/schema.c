@@ -19,6 +19,7 @@ schema_t* createSchema(const char* name) {
 
 
 uint64_t calcSizeOfPage() {
+	uint64_t sz = sizeof(schema_t);
 
 }
 

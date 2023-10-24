@@ -7,6 +7,11 @@ enum open_status {
 	OPEN_WRONG
 };
 
+enum close_status {
+	CLOSE_OK = 0,
+	CLOSE_WRONG
+};
+
 
 enum read_status{
 	READ_OK = 0,
